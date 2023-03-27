@@ -81,7 +81,7 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
+            $this->goProfile();
         }
 
         $model->password = '';
@@ -118,11 +118,16 @@ class SiteController extends Controller
 
         $model = new RegisterForm();
         if ($model->load(Yii::$app->request->post()) && $model->register()) {
-            $this->redirect('index.php?r=profile/index');
+            $this->goProfile();
         }
 
         return $this->render('register', [
             'model' => $model
         ]);
+    }
+
+    public function goProfile()
+    {
+        $this->redirect('/backend/web/profile');
     }
 }

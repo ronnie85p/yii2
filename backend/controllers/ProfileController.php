@@ -39,7 +39,7 @@ class ProfileController extends Controller
     public function actionIndex()
     {
         if (Yii::$app->user->isGuest) {
-            $this->redirect('index.php?r=site/login');
+            $this->redirect('/backend/web/site/login');
         }
 
         return $this->render('index');

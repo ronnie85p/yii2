@@ -30,6 +30,7 @@ $this->title = 'Login';
         <?php ActiveForm::end(); ?>
 
         <hr />
-        <a href="/backend/web/index.php?r=site/register">Register?</a>
+        <?= Html::a('Register?',['/site/register'],['class' => ['']]) ?>
+        <!-- <a href="/backend/web/site/register">Register?</a> -->
     </div>
 </div>

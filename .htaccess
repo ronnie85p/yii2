@@ -1,12 +1,7 @@
 # Set document root to be "basic/web"
 RewriteEngine On
-RewriteBase /
-
-# RewriteRule ^index.php - [L,R=404]
+RewriteBase /backend/web/
     
-# # If a directory or a file exists, use the request directly
-# RewriteCond %{REQUEST_FILENAME} !-f
-# RewriteCond %{REQUEST_FILENAME} !-d
-
-# # Otherwise forward the request to index.php
-# RewriteRule . index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . index.php
