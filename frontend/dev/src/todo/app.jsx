@@ -1,5 +1,5 @@
 import React from "react";
-// import { PlusCircle } from "react-bootstrap-icons";
+import { PlusCircle } from "react-bootstrap-icons";
 
 import Context from "./context";
 import TodoTabList from "../components/todo/tab/List";
@@ -83,8 +83,7 @@ export default () => {
               onClick={handleTabClick}
               style={{ padding: "10px 12px 14px 12px" }}
             >
-              {/* <PlusCircle size="1.2em" />  */}
-              Добавить
+              <PlusCircle size="1.2em" />
             </a>
           </li>
         )}
