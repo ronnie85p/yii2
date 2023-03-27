@@ -1,0 +1,36 @@
+{
+  "type": "module",
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "todo-dev": "rollup -c config/todo-rollup.config.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "formik": "^2.2.9",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-bootstrap-icons": "^1.10.2",
+    "react-dom": "^18.2.0",
+    "systemjs": "^6.14.1"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-replace": "^5.0.2",
+    "rollup": "^3.20.0",
+    "rollup-cache": "^1.2.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^2.0.2",
+    "rollup-plugin-systemjs-loader": "^1.0.1"
+  }
+}
